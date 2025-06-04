@@ -1,0 +1,56 @@
+using ContactBook.API.Services;
+using ContactBook.API.Utils;
+using Microsoft.AspNetCore.Mvc;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/contactbookapi.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Us Serilog for logging
+builder.Host.UseSerilog();
+
+// Add services to the container.
+builder.Services.AddControllers();
+
+// Add Swagger generation
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddProblemDetails();
+
+#if DEBUG
+builder.Services.AddTransient<IMailService, LocalMailService>();
+#else
+builder.Services.AddTransient<IMailService, CloudMailService>();
+#endif
+
+builder.Services.AddSingleton<EmployeesDataStore>();
+
+
+// Optional: Configure validation behavior
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = false;
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    // These two lines are all you need for Swagger with Swashbuckle
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

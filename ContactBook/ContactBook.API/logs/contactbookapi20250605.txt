@@ -1,0 +1,54 @@
+2025-06-05 20:15:59.120 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-05 20:15:59.248 +05:30 [DBG] Hosting starting
+2025-06-05 20:15:59.275 +05:30 [DBG] Middleware loaded
+2025-06-05 20:15:59.282 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-06-05 20:15:59.288 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-06-05 20:15:59.407 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-05 20:15:59.414 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-05 20:15:59.432 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-06-05 20:15:59.582 +05:30 [INF] Now listening on: https://localhost:7104
+2025-06-05 20:15:59.587 +05:30 [INF] Now listening on: http://localhost:5170
+2025-06-05 20:15:59.591 +05:30 [DBG] Loaded hosting startup assembly ContactBook.API
+2025-06-05 20:15:59.594 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-06-05 20:15:59.597 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-06-05 20:15:59.599 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-06-05 20:15:59.609 +05:30 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-05 20:15:59.614 +05:30 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-05 20:15:59.664 +05:30 [DBG] Connection id "0HND47UNTIRAD" accepted.
+2025-06-05 20:15:59.664 +05:30 [DBG] Connection id "0HND47UNTIRAE" accepted.
+2025-06-05 20:15:59.665 +05:30 [DBG] Connection id "0HND47UNTIRAE" received FIN.
+2025-06-05 20:15:59.665 +05:30 [DBG] Connection id "0HND47UNTIRAD" received FIN.
+2025-06-05 20:15:59.677 +05:30 [DBG] Connection id "0HND47UNTIRAD" started.
+2025-06-05 20:15:59.677 +05:30 [DBG] Connection id "0HND47UNTIRAE" started.
+2025-06-05 20:15:59.710 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-05 20:15:59.734 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-05 20:15:59.710 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-05 20:15:59.764 +05:30 [INF] Hosting environment: Development
+2025-06-05 20:15:59.769 +05:30 [DBG] Connection id "0HND47UNTIRAE" stopped.
+2025-06-05 20:15:59.770 +05:30 [DBG] Connection id "0HND47UNTIRAD" stopped.
+2025-06-05 20:15:59.771 +05:30 [INF] Content root path: C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API
+2025-06-05 20:15:59.778 +05:30 [DBG] Hosting started
+2025-06-05 20:15:59.779 +05:30 [DBG] Connection id "0HND47UNTIRAE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-05 20:15:59.779 +05:30 [DBG] Connection id "0HND47UNTIRAD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-05 20:16:00.242 +05:30 [DBG] Connection id "0HND47UNTIRAF" accepted.
+2025-06-05 20:16:00.246 +05:30 [DBG] Connection id "0HND47UNTIRAF" started.
+2025-06-05 20:16:00.331 +05:30 [DBG] Connection 0HND47UNTIRAF established using the following protocol: "Tls13"
+2025-06-05 20:16:00.419 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-05 20:16:00.419 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_vs/browserLink - null null
+2025-06-05 20:16:00.457 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-06-05 20:16:00.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 62.6977ms
+2025-06-05 20:16:00.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_vs/browserLink - 200 null text/javascript; charset=UTF-8 212.7425ms
+2025-06-05 20:16:00.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - null null
+2025-06-05 20:16:00.714 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-05 20:16:00.718 +05:30 [DBG] Request did not match any endpoints
+2025-06-05 20:16:00.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.8343ms

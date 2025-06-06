@@ -1,6 +1,8 @@
+using ContactBook.API.DbContexts;
 using ContactBook.API.Services;
 using ContactBook.API.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -29,6 +31,10 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 #endif
 
 builder.Services.AddSingleton<EmployeesDataStore>();
+
+builder.Services.AddDbContext<EmployeeInfoContext>(
+    options => options.UseSqlite(
+        builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
 
 // Optional: Configure validation behavior

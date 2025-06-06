@@ -1,0 +1,223 @@
+2025-06-06 10:09:35.494 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-06 10:09:35.680 +05:30 [DBG] Hosting starting
+2025-06-06 10:09:35.704 +05:30 [DBG] Middleware loaded
+2025-06-06 10:09:35.710 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-06-06 10:09:35.719 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-06-06 10:09:35.919 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-06 10:09:35.926 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-06 10:09:35.948 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-06-06 10:09:36.212 +05:30 [INF] Now listening on: https://localhost:7104
+2025-06-06 10:09:36.218 +05:30 [INF] Now listening on: http://localhost:5170
+2025-06-06 10:09:36.223 +05:30 [DBG] Loaded hosting startup assembly ContactBook.API
+2025-06-06 10:09:36.227 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-06-06 10:09:36.232 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-06-06 10:09:36.236 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-06-06 10:09:36.254 +05:30 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-06 10:09:36.261 +05:30 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-06 10:09:36.352 +05:30 [DBG] Connection id "0HND4MGI1SIMR" accepted.
+2025-06-06 10:09:36.352 +05:30 [DBG] Connection id "0HND4MGI1SIMS" accepted.
+2025-06-06 10:09:36.358 +05:30 [DBG] Connection id "0HND4MGI1SIMR" started.
+2025-06-06 10:09:36.361 +05:30 [DBG] Connection id "0HND4MGI1SIMS" started.
+2025-06-06 10:09:36.454 +05:30 [DBG] Connection id "0HND4MGI1SIMS" received FIN.
+2025-06-06 10:09:36.454 +05:30 [DBG] Connection id "0HND4MGI1SIMR" received FIN.
+2025-06-06 10:09:36.506 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-06 10:09:36.505 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-06 10:09:36.582 +05:30 [DBG] Connection id "0HND4MGI1SIMR" stopped.
+2025-06-06 10:09:36.585 +05:30 [DBG] Connection id "0HND4MGI1SIMS" stopped.
+2025-06-06 10:09:36.596 +05:30 [DBG] Connection id "0HND4MGI1SIMS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-06 10:09:36.596 +05:30 [DBG] Connection id "0HND4MGI1SIMR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-06 10:09:36.734 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 10:09:36.738 +05:30 [INF] Hosting environment: Development
+2025-06-06 10:09:36.743 +05:30 [INF] Content root path: C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API
+2025-06-06 10:09:36.747 +05:30 [DBG] Hosting started
+2025-06-06 10:09:37.253 +05:30 [DBG] Connection id "0HND4MGI1SIMT" accepted.
+2025-06-06 10:09:37.258 +05:30 [DBG] Connection id "0HND4MGI1SIMT" started.
+2025-06-06 10:09:37.366 +05:30 [DBG] Connection 0HND4MGI1SIMT established using the following protocol: "Tls13"
+2025-06-06 10:09:37.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 10:09:37.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_vs/browserLink - null null
+2025-06-06 10:09:37.625 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-06-06 10:09:37.633 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 82.7178ms
+2025-06-06 10:09:37.823 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_vs/browserLink - 200 null text/javascript; charset=UTF-8 274.334ms
+2025-06-06 10:09:37.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - null null
+2025-06-06 10:09:37.978 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-06 10:09:37.984 +05:30 [DBG] Request did not match any endpoints
+2025-06-06 10:09:38.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.5297ms
+2025-06-06 10:38:45.790 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-06 10:38:45.994 +05:30 [DBG] Hosting starting
+2025-06-06 10:38:46.017 +05:30 [DBG] Middleware loaded
+2025-06-06 10:38:46.023 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-06-06 10:38:46.029 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-06-06 10:38:46.174 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-06 10:38:46.181 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-06 10:38:46.204 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-06-06 10:38:46.373 +05:30 [INF] Now listening on: https://localhost:7104
+2025-06-06 10:38:46.380 +05:30 [INF] Now listening on: http://localhost:5170
+2025-06-06 10:38:46.386 +05:30 [DBG] Loaded hosting startup assembly ContactBook.API
+2025-06-06 10:38:46.392 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-06-06 10:38:46.398 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-06-06 10:38:46.404 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-06-06 10:38:46.427 +05:30 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-06 10:38:46.437 +05:30 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-06 10:38:46.528 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 10:38:46.533 +05:30 [INF] Hosting environment: Development
+2025-06-06 10:38:46.538 +05:30 [INF] Content root path: C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API
+2025-06-06 10:38:46.542 +05:30 [DBG] Hosting started
+2025-06-06 10:38:46.652 +05:30 [DBG] Connection id "0HND4N0RM20C4" received FIN.
+2025-06-06 10:38:46.665 +05:30 [DBG] Connection id "0HND4N0RM20C4" accepted.
+2025-06-06 10:38:46.671 +05:30 [DBG] Connection id "0HND4N0RM20C4" started.
+2025-06-06 10:38:46.700 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-06 10:38:46.756 +05:30 [DBG] Connection id "0HND4N0RM20C4" stopped.
+2025-06-06 10:38:46.765 +05:30 [DBG] Connection id "0HND4N0RM20C4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-06 10:38:47.071 +05:30 [DBG] Connection id "0HND4N0RM20C5" accepted.
+2025-06-06 10:38:47.076 +05:30 [DBG] Connection id "0HND4N0RM20C5" started.
+2025-06-06 10:38:47.187 +05:30 [DBG] Connection 0HND4N0RM20C5 established using the following protocol: "Tls13"
+2025-06-06 10:38:47.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_vs/browserLink - null null
+2025-06-06 10:38:47.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-06 10:38:47.388 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-06-06 10:38:47.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 95.1204ms
+2025-06-06 10:38:47.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_vs/browserLink - 200 null text/javascript; charset=UTF-8 153.5167ms
+2025-06-06 10:38:47.505 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - null null
+2025-06-06 10:38:47.542 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-06 10:38:47.547 +05:30 [DBG] Request did not match any endpoints
+2025-06-06 10:38:47.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.4331ms
+2025-06-06 10:39:07.080 +05:30 [DBG] Connection id "0HND4N0RM20C6" accepted.
+2025-06-06 10:39:07.086 +05:30 [DBG] Connection id "0HND4N0RM20C6" started.
+2025-06-06 10:39:07.087 +05:30 [DBG] Connection id "0HND4N0RM20C7" accepted.
+2025-06-06 10:39:07.087 +05:30 [DBG] Connection id "0HND4N0RM20C6" received FIN.
+2025-06-06 10:39:07.101 +05:30 [DBG] Connection id "0HND4N0RM20C7" started.
+2025-06-06 10:39:07.112 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-06 10:39:07.134 +05:30 [DBG] Connection 0HND4N0RM20C7 established using the following protocol: "Tls13"
+2025-06-06 10:39:07.135 +05:30 [DBG] Connection id "0HND4N0RM20C6" stopped.
+2025-06-06 10:39:07.162 +05:30 [DBG] Connection id "0HND4N0RM20C6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-06 10:39:07.170 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7104/api/employees - null null
+2025-06-06 10:39:07.209 +05:30 [DBG] 1 candidate(s) found for the request path '/api/employees'
+2025-06-06 10:39:07.220 +05:30 [DBG] Endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)' with route pattern 'api/employees' is valid for the request path '/api/employees'
+2025-06-06 10:39:07.226 +05:30 [DBG] Request matched endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:07.237 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-06 10:39:07.251 +05:30 [INF] Executing endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:07.290 +05:30 [INF] Route matched with {action = "GetAllEmployees", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ContactBook.API.Models.EmployeeDto]] GetAllEmployees() on controller ContactBook.API.Controllers.EmployeesController (ContactBook.API).
+2025-06-06 10:39:07.303 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-06 10:39:07.316 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-06 10:39:07.325 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-06 10:39:07.337 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-06 10:39:07.347 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-06 10:39:07.364 +05:30 [DBG] Executing controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:07.378 +05:30 [DBG] Executed controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:07.401 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-06 10:39:07.418 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-06-06 10:39:07.423 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-06 10:39:07.428 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-06 10:39:07.431 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-06 10:39:07.436 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ContactBook.API.Models.EmployeeDto, ContactBook.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-06 10:39:07.549 +05:30 [INF] Executed action ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API) in 181.8786ms
+2025-06-06 10:39:07.560 +05:30 [INF] Executed endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:07.572 +05:30 [DBG] Connection id "0HND4N0RM20C7" completed keep alive response.
+2025-06-06 10:39:07.584 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7104/api/employees - 200 null application/json; charset=utf-8 414.4313ms
+2025-06-06 10:39:24.286 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7104/api/employees/6d25c2bb-d3ca-434d-9ea8-7a791d73ee17 - null null
+2025-06-06 10:39:24.315 +05:30 [DBG] 1 candidate(s) found for the request path '/api/employees/6d25c2bb-d3ca-434d-9ea8-7a791d73ee17'
+2025-06-06 10:39:24.329 +05:30 [DBG] Endpoint 'ContactBook.API.Controllers.EmployeesController.GetEmployeeById (ContactBook.API)' with route pattern 'api/employees/{employeeId}' is valid for the request path '/api/employees/6d25c2bb-d3ca-434d-9ea8-7a791d73ee17'
+2025-06-06 10:39:24.347 +05:30 [DBG] Request matched endpoint 'ContactBook.API.Controllers.EmployeesController.GetEmployeeById (ContactBook.API)'
+2025-06-06 10:39:24.364 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-06 10:39:24.373 +05:30 [INF] Executing endpoint 'ContactBook.API.Controllers.EmployeesController.GetEmployeeById (ContactBook.API)'
+2025-06-06 10:39:24.411 +05:30 [INF] Route matched with {action = "GetEmployeeById", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ContactBook.API.Models.EmployeeDto]] GetEmployeeById(System.Guid) on controller ContactBook.API.Controllers.EmployeesController (ContactBook.API).
+2025-06-06 10:39:24.429 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-06 10:39:24.443 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-06 10:39:24.459 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-06 10:39:24.479 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-06 10:39:24.496 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-06 10:39:24.515 +05:30 [DBG] Executing controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:24.533 +05:30 [DBG] Executed controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:24.565 +05:30 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Guid' ...
+2025-06-06 10:39:24.584 +05:30 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Guid' using the name 'employeeId' in request data ...
+2025-06-06 10:39:24.601 +05:30 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Guid'.
+2025-06-06 10:39:24.610 +05:30 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Guid'.
+2025-06-06 10:39:24.623 +05:30 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Guid' ...
+2025-06-06 10:39:24.644 +05:30 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Guid'.
+2025-06-06 10:39:24.662 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-06 10:39:24.684 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-06-06 10:39:24.692 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-06 10:39:24.701 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-06 10:39:24.711 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-06 10:39:24.726 +05:30 [INF] Executing OkObjectResult, writing value of type 'ContactBook.API.Models.EmployeeDto'.
+2025-06-06 10:39:24.749 +05:30 [INF] Executed action ContactBook.API.Controllers.EmployeesController.GetEmployeeById (ContactBook.API) in 233.0698ms
+2025-06-06 10:39:24.762 +05:30 [INF] Executed endpoint 'ContactBook.API.Controllers.EmployeesController.GetEmployeeById (ContactBook.API)'
+2025-06-06 10:39:24.774 +05:30 [DBG] Connection id "0HND4N0RM20C7" completed keep alive response.
+2025-06-06 10:39:24.780 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7104/api/employees/6d25c2bb-d3ca-434d-9ea8-7a791d73ee17 - 200 null application/json; charset=utf-8 494.1497ms
+2025-06-06 10:39:40.831 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7104/api/employees - application/json 229
+2025-06-06 10:39:40.858 +05:30 [DBG] 1 candidate(s) found for the request path '/api/employees'
+2025-06-06 10:39:40.868 +05:30 [DBG] Endpoint 'ContactBook.API.Controllers.EmployeesController.AddEmployee (ContactBook.API)' with route pattern 'api/employees' is valid for the request path '/api/employees'
+2025-06-06 10:39:40.890 +05:30 [DBG] Request matched endpoint 'ContactBook.API.Controllers.EmployeesController.AddEmployee (ContactBook.API)'
+2025-06-06 10:39:40.908 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-06 10:39:40.918 +05:30 [INF] Executing endpoint 'ContactBook.API.Controllers.EmployeesController.AddEmployee (ContactBook.API)'
+2025-06-06 10:39:40.935 +05:30 [INF] Route matched with {action = "AddEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ContactBook.API.Models.EmployeeDto] AddEmployee(ContactBook.API.Models.EmployeeDto) on controller ContactBook.API.Controllers.EmployeesController (ContactBook.API).
+2025-06-06 10:39:40.952 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-06 10:39:40.965 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-06 10:39:40.981 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-06 10:39:41.002 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-06 10:39:41.021 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-06 10:39:41.036 +05:30 [DBG] Executing controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:41.050 +05:30 [DBG] Executed controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:41.064 +05:30 [DBG] Attempting to bind parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto' ...
+2025-06-06 10:39:41.074 +05:30 [DBG] Attempting to bind parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto' using the name '' in request data ...
+2025-06-06 10:39:41.086 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-06-06 10:39:41.112 +05:30 [DBG] Connection id "0HND4N0RM20C7", Request id "0HND4N0RM20C7:00000003": started reading request body.
+2025-06-06 10:39:41.122 +05:30 [DBG] Connection id "0HND4N0RM20C7", Request id "0HND4N0RM20C7:00000003": done reading request body.
+2025-06-06 10:39:41.161 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'ContactBook.API.Models.EmployeeDto'
+2025-06-06 10:39:41.172 +05:30 [DBG] Done attempting to bind parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto'.
+2025-06-06 10:39:41.192 +05:30 [DBG] Done attempting to bind parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto'.
+2025-06-06 10:39:41.219 +05:30 [DBG] Attempting to validate the bound parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto' ...
+2025-06-06 10:39:41.295 +05:30 [DBG] Done attempting to validate the bound parameter 'employee' of type 'ContactBook.API.Models.EmployeeDto'.
+2025-06-06 10:39:41.307 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-06 10:39:41.328 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-06-06 10:39:41.334 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-06 10:39:41.340 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-06 10:39:41.347 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-06 10:39:41.368 +05:30 [INF] Executing OkObjectResult, writing value of type 'ContactBook.API.Models.EmployeeDto'.
+2025-06-06 10:39:41.386 +05:30 [INF] Executed action ContactBook.API.Controllers.EmployeesController.AddEmployee (ContactBook.API) in 349.9298ms
+2025-06-06 10:39:41.401 +05:30 [INF] Executed endpoint 'ContactBook.API.Controllers.EmployeesController.AddEmployee (ContactBook.API)'
+2025-06-06 10:39:41.408 +05:30 [DBG] Connection id "0HND4N0RM20C7" completed keep alive response.
+2025-06-06 10:39:41.417 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7104/api/employees - 200 null application/json; charset=utf-8 586.542ms
+2025-06-06 10:39:46.074 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7104/api/employees - null null
+2025-06-06 10:39:46.114 +05:30 [DBG] 1 candidate(s) found for the request path '/api/employees'
+2025-06-06 10:39:46.131 +05:30 [DBG] Endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)' with route pattern 'api/employees' is valid for the request path '/api/employees'
+2025-06-06 10:39:46.156 +05:30 [DBG] Request matched endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:46.166 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-06 10:39:46.172 +05:30 [INF] Executing endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:46.182 +05:30 [INF] Route matched with {action = "GetAllEmployees", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ContactBook.API.Models.EmployeeDto]] GetAllEmployees() on controller ContactBook.API.Controllers.EmployeesController (ContactBook.API).
+2025-06-06 10:39:46.202 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-06 10:39:46.215 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-06 10:39:46.231 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-06 10:39:46.254 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-06 10:39:46.284 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-06 10:39:46.313 +05:30 [DBG] Executing controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:46.338 +05:30 [DBG] Executed controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-06 10:39:46.356 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-06 10:39:46.380 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-06-06 10:39:46.389 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-06 10:39:46.396 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-06 10:39:46.406 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-06 10:39:46.427 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ContactBook.API.Models.EmployeeDto, ContactBook.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-06 10:39:46.441 +05:30 [INF] Executed action ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API) in 128.9717ms
+2025-06-06 10:39:46.455 +05:30 [INF] Executed endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-06 10:39:46.464 +05:30 [DBG] Connection id "0HND4N0RM20C7" completed keep alive response.
+2025-06-06 10:39:46.476 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7104/api/employees - 200 null application/json; charset=utf-8 402.0328ms

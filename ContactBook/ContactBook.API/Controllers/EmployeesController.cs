@@ -1,4 +1,5 @@
-﻿using ContactBook.API.Entities;
+﻿using AutoMapper;
+using ContactBook.API.Entities;
 using ContactBook.API.Models;
 using ContactBook.API.Repository;
 using ContactBook.API.Services;
@@ -15,15 +16,18 @@ namespace ContactBook.API.Controllers
         private readonly IMailService _mailService;
         private readonly EmployeesDataStore _employeesDataStore;
         private readonly IEmployeeInfoRepository _employeeInfoRepository;
+        private readonly IMapper _mapper;
 
         public EmployeesController(ILogger<EmployeesController> logger,
             IMailService mailService, EmployeesDataStore employeesDataStore,
-            IEmployeeInfoRepository employeeInfoRepository)
+            IEmployeeInfoRepository employeeInfoRepository,
+            IMapper mapper)
         {
             _logger = logger;
             _mailService = mailService;
             _employeesDataStore = employeesDataStore;
             _employeeInfoRepository = employeeInfoRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -32,17 +36,7 @@ namespace ContactBook.API.Controllers
             try
             {
                 IEnumerable<Employee> employees = await _employeeInfoRepository.GetAllEmployeesAsync();
-                List<EmployeeDto> employeeDtos = [];
-
-                foreach (var employee in employees)
-                {
-                    employeeDtos.Add(new EmployeeDto
-                    {
-                        Id = employee.Id,
-                        Name = employee.Name,
-                        Designation = employee.Designation,
-                    });
-                }
+                IEnumerable<EmployeeDto> employeeDtos = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
                 return Ok(employeeDtos);
             }
             catch (Exception exception)

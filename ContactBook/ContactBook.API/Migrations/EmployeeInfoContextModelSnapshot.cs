@@ -44,21 +44,21 @@ namespace ContactBook.API.Migrations
                         {
                             ContactId = 1,
                             EmailAddress = "jd@gmail.com",
-                            EmployeeId = 0,
+                            EmployeeId = 1,
                             MobileNumber = "123-456-7890"
                         },
                         new
                         {
                             ContactId = 2,
                             EmailAddress = "js@gmail.com",
-                            EmployeeId = 0,
+                            EmployeeId = 2,
                             MobileNumber = "987-654-3210"
                         },
                         new
                         {
                             ContactId = 3,
                             EmailAddress = "aj@gmail.com",
-                            EmployeeId = 0,
+                            EmployeeId = 3,
                             MobileNumber = "555-555-5555"
                         });
                 });

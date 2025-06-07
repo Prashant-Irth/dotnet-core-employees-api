@@ -1,4 +1,6 @@
-﻿using ContactBook.API.Models;
+﻿using ContactBook.API.Entities;
+using ContactBook.API.Models;
+using ContactBook.API.Repository;
 using ContactBook.API.Services;
 using ContactBook.API.Utils;
 using Microsoft.AspNetCore.Mvc;
@@ -12,22 +14,36 @@ namespace ContactBook.API.Controllers
         private readonly ILogger<EmployeesController> _logger;
         private readonly IMailService _mailService;
         private readonly EmployeesDataStore _employeesDataStore;
+        private readonly IEmployeeInfoRepository _employeeInfoRepository;
 
         public EmployeesController(ILogger<EmployeesController> logger,
-            IMailService mailService, EmployeesDataStore employeesDataStore)
+            IMailService mailService, EmployeesDataStore employeesDataStore,
+            IEmployeeInfoRepository employeeInfoRepository)
         {
             _logger = logger;
             _mailService = mailService;
             _employeesDataStore = employeesDataStore;
+            _employeeInfoRepository = employeeInfoRepository;
         }
 
         [HttpGet]
-        public ActionResult<List<EmployeeDto>> GetAllEmployees()
+        public async Task<ActionResult<List<EmployeeDto>>> GetAllEmployees()
         {
             try
             {
-                List<EmployeeDto> employees = _employeesDataStore.Employees;
-                return Ok(employees);
+                IEnumerable<Employee> employees = await _employeeInfoRepository.GetAllEmployeesAsync();
+                List<EmployeeDto> employeeDtos = [];
+
+                foreach (var employee in employees)
+                {
+                    employeeDtos.Add(new EmployeeDto
+                    {
+                        Id = employee.Id,
+                        Name = employee.Name,
+                        Designation = employee.Designation,
+                    });
+                }
+                return Ok(employeeDtos);
             }
             catch (Exception exception)
             {
@@ -37,16 +53,18 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpGet("{employeeId}")]
-        public ActionResult<List<EmployeeDto>> GetEmployeeById(Guid employeeId)
+        public async Task<ActionResult<List<EmployeeDto>>> GetEmployeeById(int employeeId)
         {
-            List<EmployeeDto> employees = _employeesDataStore.Employees;
-            EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
+            IEnumerable<Employee> employees = await _employeeInfoRepository.GetAllEmployeesAsync();
+            Employee? employee = employees.FirstOrDefault(x => x.Id == employeeId);
 
             if (employee == null)
             {
                 _logger.LogWarning($"Employee with {employeeId} was not found!!!");
                 return NotFound();
             }
+
+
 
             return Ok(employee);
         }
@@ -59,7 +77,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpPut("{employeeId}")]
-        public ActionResult<EmployeeDto> UpdateEmployee(Guid employeeId, [FromBody] EmployeeDto employeeDto)
+        public ActionResult<EmployeeDto> UpdateEmployee(int employeeId, [FromBody] EmployeeDto employeeDto)
         {
             List<EmployeeDto> employees = _employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
@@ -77,7 +95,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpDelete("{employeeId}")]
-        public ActionResult DeleteEmployee(Guid employeeId)
+        public ActionResult DeleteEmployee(int employeeId)
         {
             EmployeeDto? employee = _employeesDataStore.Employees.FirstOrDefault(x => x.Id == employeeId);
             if (employee == null)

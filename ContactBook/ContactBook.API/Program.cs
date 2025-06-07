@@ -1,4 +1,5 @@
 using ContactBook.API.DbContexts;
+using ContactBook.API.Repository;
 using ContactBook.API.Services;
 using ContactBook.API.Utils;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +37,7 @@ builder.Services.AddSingleton<EmployeesDataStore>();
 builder.Services.AddDbContext<EmployeeInfoContext>(
     options => options.UseSqlite(builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
+builder.Services.AddScoped<IEmployeeInfoRepository, EmployeeInfoRepository>();
 
 // Optional: Configure validation behavior
 builder.Services.Configure<ApiBehaviorOptions>(options =>

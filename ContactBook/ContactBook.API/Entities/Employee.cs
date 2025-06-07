@@ -3,6 +3,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContactBook.API.Entities
 {
+    /// <summary>
+    /// DATABASE SETUP:
+    /// STEP 1: Creating Employee Entity with required properties.
+    /// </summary>
     public class Employee
     {
         [Key]

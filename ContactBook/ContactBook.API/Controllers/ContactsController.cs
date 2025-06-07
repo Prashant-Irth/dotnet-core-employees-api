@@ -9,7 +9,7 @@ namespace ContactBook.API.Controllers
     public class ContactsController(EmployeesDataStore employeesDataStore) : ControllerBase
     {
         [HttpGet]
-        public ActionResult<ContactDto> GetAllContactsOfEmployee(Guid employeeId)
+        public ActionResult<ContactDto> GetAllContactsOfEmployee(int employeeId)
         {
             List<EmployeeDto> employees = employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
@@ -23,7 +23,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpGet("{contactId}", Name = "GetContactByContactId")]
-        public ActionResult<ContactDto> GetContactByContactId(Guid employeeId, Guid contactId)
+        public ActionResult<ContactDto> GetContactByContactId(int employeeId, int contactId)
         {
             List<EmployeeDto> employees = employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
@@ -43,7 +43,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ContactDto> AddContact(Guid employeeId, [FromBody] ContactCreationDto contactCreationDto)
+        public ActionResult<ContactDto> AddContact(int employeeId, [FromBody] ContactCreationDto contactCreationDto)
         {
             List<EmployeeDto> employees = employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
@@ -68,7 +68,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpPut("{contactId}")]
-        public ActionResult<ContactDto> UpdateContact(Guid employeeId, Guid contactId, [FromBody] ContactUpdationDto contactUpdationDto)
+        public ActionResult<ContactDto> UpdateContact(int employeeId, int contactId, [FromBody] ContactUpdationDto contactUpdationDto)
         {
             List<EmployeeDto> employees = employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);
@@ -94,7 +94,7 @@ namespace ContactBook.API.Controllers
         }
 
         [HttpDelete("{contactId}")]
-        public ActionResult DeleteContact(Guid employeeId, Guid contactId)
+        public ActionResult DeleteContact(int employeeId, int contactId)
         {
             List<EmployeeDto> employees = employeesDataStore.Employees;
             EmployeeDto? employee = employees.FirstOrDefault(x => x.Id == employeeId);

@@ -7,7 +7,7 @@ namespace ContactBook.API.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid ContactId { get; set; } = Guid.NewGuid();
+        public int ContactId { get; set; }
 
         [Required]
         public required string MobileNumber { get; set; }
@@ -18,6 +18,6 @@ namespace ContactBook.API.Entities
 
         [ForeignKey("EmployeeId")]
         public Employee? Employee { get; set; } = null;
-        public Guid EmployeeId { get; set; }
+        public int EmployeeId { get; set; }
     }
 }

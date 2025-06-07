@@ -32,9 +32,9 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 
 builder.Services.AddSingleton<EmployeesDataStore>();
 
+// The connection string "Data Source=EmployeeInfo.db" tells it to use a local SQLite file named EmployeeInfo.db.
 builder.Services.AddDbContext<EmployeeInfoContext>(
-    options => options.UseSqlite(
-        builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
+    options => options.UseSqlite(builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
 
 // Optional: Configure validation behavior

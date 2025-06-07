@@ -35,9 +35,11 @@ builder.Services.AddSingleton<EmployeesDataStore>();
 
 // The connection string "Data Source=EmployeeInfo.db" tells it to use a local SQLite file named EmployeeInfo.db.
 builder.Services.AddDbContext<EmployeeInfoContext>(
-    options => options.UseSqlite(builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
+    options => options.UseSqlite(builder.Configuration["ConnectionStrings:EmployeeInfoDBConnectionString"]));
 
 builder.Services.AddScoped<IEmployeeInfoRepository, EmployeeInfoRepository>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Optional: Configure validation behavior
 builder.Services.Configure<ApiBehaviorOptions>(options =>

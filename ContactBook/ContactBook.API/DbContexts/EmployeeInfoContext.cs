@@ -18,6 +18,7 @@ namespace ContactBook.API.DbContexts
     ///         override the OnModelCreating method in the DbContext. Add dummy data inside that method.
     /// Step 9: After seeding, run the command "add-migration <MigrationName>" again to create a new migration.
     ///         After that, run "update-database" to apply the changes to the database.
+    /// Step 10: Now run the application and check the database file to see if the data is seeded correctly.
     /// </summary>
     public class EmployeeInfoContext : DbContext
     {

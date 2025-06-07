@@ -3075,3 +3075,214 @@ ORDER BY "e"."Name"
 2025-06-07 19:29:16.826 +05:30 [DBG] Disposing connection to database 'main' on server 'EmployeeInfo.db'.
 2025-06-07 19:29:16.839 +05:30 [DBG] Disposed connection to database 'main' on server 'EmployeeInfo.db' (12ms).
 2025-06-07 19:29:16.853 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7104/api/employees - 200 null application/json; charset=utf-8 5759.0705ms
+2025-06-07 19:38:41.551 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-06-07 19:38:41.693 +05:30 [DBG] Hosting starting
+2025-06-07 19:38:41.720 +05:30 [DBG] Middleware loaded
+2025-06-07 19:38:41.726 +05:30 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2025-06-07 19:38:41.735 +05:30 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-06-07 19:38:41.926 +05:30 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-06-07 19:38:41.940 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-06-07 19:38:41.955 +05:30 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-06-07 19:38:42.111 +05:30 [INF] Now listening on: https://localhost:7104
+2025-06-07 19:38:42.116 +05:30 [INF] Now listening on: http://localhost:5170
+2025-06-07 19:38:42.121 +05:30 [DBG] Loaded hosting startup assembly ContactBook.API
+2025-06-07 19:38:42.127 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-06-07 19:38:42.132 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-06-07 19:38:42.138 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-06-07 19:38:42.144 +05:30 [DBG] Connection id "0HND5PJ7G56IQ" accepted.
+2025-06-07 19:38:42.144 +05:30 [DBG] Connection id "0HND5PJ7G56IR" accepted.
+2025-06-07 19:38:42.161 +05:30 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-07 19:38:42.161 +05:30 [DBG] Connection id "0HND5PJ7G56IQ" started.
+2025-06-07 19:38:42.162 +05:30 [DBG] Connection id "0HND5PJ7G56IR" received FIN.
+2025-06-07 19:38:42.170 +05:30 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-06-07 19:38:42.162 +05:30 [DBG] Connection id "0HND5PJ7G56IQ" received FIN.
+2025-06-07 19:38:42.163 +05:30 [DBG] Connection id "0HND5PJ7G56IR" started.
+2025-06-07 19:38:42.234 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-07 19:38:42.234 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-07 19:38:42.295 +05:30 [DBG] Connection id "0HND5PJ7G56IR" stopped.
+2025-06-07 19:38:42.303 +05:30 [DBG] Connection id "0HND5PJ7G56IQ" stopped.
+2025-06-07 19:38:42.304 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 19:38:42.313 +05:30 [DBG] Connection id "0HND5PJ7G56IR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-07 19:38:42.313 +05:30 [DBG] Connection id "0HND5PJ7G56IQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-07 19:38:42.316 +05:30 [INF] Hosting environment: Development
+2025-06-07 19:38:42.335 +05:30 [INF] Content root path: C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API
+2025-06-07 19:38:42.340 +05:30 [DBG] Hosting started
+2025-06-07 19:38:42.800 +05:30 [DBG] Connection id "0HND5PJ7G56IS" accepted.
+2025-06-07 19:38:42.804 +05:30 [DBG] Connection id "0HND5PJ7G56IS" started.
+2025-06-07 19:38:42.953 +05:30 [DBG] Connection 0HND5PJ7G56IS established using the following protocol: "Tls13"
+2025-06-07 19:38:43.042 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_vs/browserLink - null null
+2025-06-07 19:38:43.042 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-07 19:38:43.155 +05:30 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-06-07 19:38:43.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 147.5018ms
+2025-06-07 19:38:43.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/_vs/browserLink - 200 null text/javascript; charset=UTF-8 196.3701ms
+2025-06-07 19:38:43.375 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - null null
+2025-06-07 19:38:43.433 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-06-07 19:38:43.439 +05:30 [DBG] Request did not match any endpoints
+2025-06-07 19:38:43.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7104/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.7224ms
+2025-06-07 19:38:46.586 +05:30 [DBG] Connection id "0HND5PJ7G56IT" accepted.
+2025-06-07 19:38:46.587 +05:30 [DBG] Connection id "0HND5PJ7G56IT" received FIN.
+2025-06-07 19:38:46.595 +05:30 [DBG] Connection id "0HND5PJ7G56IT" started.
+2025-06-07 19:38:46.596 +05:30 [DBG] Connection id "0HND5PJ7G56IU" accepted.
+2025-06-07 19:38:46.616 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-06-07 19:38:46.622 +05:30 [DBG] Connection id "0HND5PJ7G56IU" started.
+2025-06-07 19:38:46.641 +05:30 [DBG] Connection id "0HND5PJ7G56IT" stopped.
+2025-06-07 19:38:46.659 +05:30 [DBG] Connection id "0HND5PJ7G56IT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-06-07 19:38:46.665 +05:30 [DBG] Connection 0HND5PJ7G56IU established using the following protocol: "Tls13"
+2025-06-07 19:38:46.707 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7104/api/employees - null null
+2025-06-07 19:38:46.750 +05:30 [DBG] 1 candidate(s) found for the request path '/api/employees'
+2025-06-07 19:38:46.764 +05:30 [DBG] Endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)' with route pattern 'api/employees' is valid for the request path '/api/employees'
+2025-06-07 19:38:46.781 +05:30 [DBG] Request matched endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-07 19:38:46.815 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-06-07 19:38:46.835 +05:30 [INF] Executing endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-07 19:38:46.926 +05:30 [INF] Route matched with {action = "GetAllEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ContactBook.API.Models.EmployeeDto]]] GetAllEmployees() on controller ContactBook.API.Controllers.EmployeesController (ContactBook.API).
+2025-06-07 19:38:46.948 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-06-07 19:38:46.960 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-06-07 19:38:46.976 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-06-07 19:38:46.997 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-06-07 19:38:47.015 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-06-07 19:38:47.033 +05:30 [DBG] Executing controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-07 19:38:47.560 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-06-07 19:38:47.684 +05:30 [DBG] Executed controller factory for controller ContactBook.API.Controllers.EmployeesController (ContactBook.API)
+2025-06-07 19:38:50.561 +05:30 [DBG] Entity Framework Core 9.0.5 initialized 'EmployeeInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.5' with options: None
+2025-06-07 19:38:50.705 +05:30 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .OrderBy(x => x.Name)'
+2025-06-07 19:38:51.766 +05:30 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Employee>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Designation (string) Required, 1], [Property: Employee.Name (string) Required MaxLength(50), 2] }
+        SELECT e.Id, e.Designation, e.Name
+        FROM Employees AS e
+        ORDER BY e.Name ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Designation (string) Required, 1], [Property: Employee.Name (string) Required MaxLength(50), 2] }
+        SELECT e.Id, e.Designation, e.Name
+        FROM Employees AS e
+        ORDER BY e.Name ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Employee entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Employee instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Employee);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Employee.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("ContactBook.API.Entities.Employee").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Employee)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ContactBook.API.Entities.Employee")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ContactBook.API.Entities.Employee")]: 
+                        {
+                            return 
+                            {
+                                Employee instance;
+                                instance = new Employee();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Designation>k__BackingField = dataReader.GetString(1);
+                                instance.<Name>k__BackingField = dataReader.GetString(2);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ContactBook.API.Entities.Employee")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Employee)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ContactBook.API.DbContexts.EmployeeInfoContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-06-07 19:38:51.929 +05:30 [DBG] Creating DbConnection.
+2025-06-07 19:38:51.996 +05:30 [DBG] Created DbConnection. (61ms).
+2025-06-07 19:38:52.018 +05:30 [DBG] Opening connection to database 'main' on server 'EmployeeInfo.db'.
+2025-06-07 19:38:52.088 +05:30 [DBG] Opened connection to database 'main' on server 'C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API\EmployeeInfo.db'.
+2025-06-07 19:38:52.113 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-06-07 19:38:52.161 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (32ms).
+2025-06-07 19:38:52.175 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (65ms).
+2025-06-07 19:38:52.216 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Designation", "e"."Name"
+FROM "Employees" AS "e"
+ORDER BY "e"."Name"
+2025-06-07 19:38:52.310 +05:30 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "e"."Id", "e"."Designation", "e"."Name"
+FROM "Employees" AS "e"
+ORDER BY "e"."Name"
+2025-06-07 19:38:52.421 +05:30 [DBG] Context 'EmployeeInfoContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-07 19:38:52.508 +05:30 [DBG] Context 'EmployeeInfoContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-07 19:38:52.535 +05:30 [DBG] Context 'EmployeeInfoContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-06-07 19:38:52.556 +05:30 [DBG] Closing data reader to 'main' on server 'C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API\EmployeeInfo.db'.
+2025-06-07 19:38:52.587 +05:30 [DBG] A data reader for 'main' on server 'C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API\EmployeeInfo.db' is being disposed after spending 240ms reading results.
+2025-06-07 19:38:52.613 +05:30 [DBG] Closing connection to database 'main' on server 'C:\Prashant\POC\Backend\Employees\dotnet-core-employees-api\ContactBook\ContactBook.API\EmployeeInfo.db'.
+2025-06-07 19:38:52.645 +05:30 [DBG] Closed connection to database 'main' on server 'EmployeeInfo.db' (31ms).
+2025-06-07 19:38:52.673 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-06-07 19:38:52.706 +05:30 [DBG] No information found on request to perform content negotiation.
+2025-06-07 19:38:52.715 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-06-07 19:38:52.722 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-06-07 19:38:52.734 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-06-07 19:38:52.753 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ContactBook.API.Models.EmployeeDto, ContactBook.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-07 19:38:52.824 +05:30 [INF] Executed action ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API) in 5783.803ms
+2025-06-07 19:38:52.838 +05:30 [INF] Executed endpoint 'ContactBook.API.Controllers.EmployeesController.GetAllEmployees (ContactBook.API)'
+2025-06-07 19:38:52.851 +05:30 [DBG] Connection id "0HND5PJ7G56IU" completed keep alive response.
+2025-06-07 19:38:52.877 +05:30 [DBG] 'EmployeeInfoContext' disposed.
+2025-06-07 19:38:52.900 +05:30 [DBG] Disposing connection to database 'main' on server 'EmployeeInfo.db'.
+2025-06-07 19:38:52.916 +05:30 [DBG] Disposed connection to database 'main' on server 'EmployeeInfo.db' (15ms).
+2025-06-07 19:38:52.933 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7104/api/employees - 200 null application/json; charset=utf-8 6226.7495ms
